@@ -1,0 +1,71 @@
+<!-- 
+//author: Orlando Rodriuez
+//ICT4510-1 Advanced Web Development and Maintenance
+//index.html
+
+//The javascript functions and custom css previously in this file
+//have been moved to the following locaitons
+//js/validation.js, js/app.js, and css/custom.css
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Demo Form">
+		<meta name="author" content="Orlando Rodriguez">
+		
+		<title>ICT-4510-1 Week 3 Assignment 3</title>
+		<!-- jQuery-->
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<!-- JavaScript Plugin jQuery Validate-->
+		<script src="https://4a338a3368f8d05dd8dc-1696d71ecdfa5c9645a95bef432b9558.ssl.cf1.rackcdn.com/javascripts/vendor/jquery.validate.min.js"></script>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+		<div class="jumbotron">
+			<h3 class="text-center">ICT-4510-1 Week 3 Assignment 3</h3>
+			<h4 class="text-center">Orlando Rodriguez</h4>
+		</div>
+		<div class="col-sm-2 col-md-2"></div>
+		<div class="col-sm-8 col-md-8">
+			<form>
+				<div class="form-group">
+					<label for="firstname">First Name *</label>
+					<input name="firstname" type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+				</div>
+				<div class="form-group">
+					<label for="lastname">Last Name *</label>
+					<input name="lastname" type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+				</div>
+				<div class="form-group">
+					<label for="email">Email address *</label>
+					<input name="email" type="email" class="form-control" id="email" placeholder="Enter Email Address">
+				</div>
+				<div class="form-group">
+					<label for="phone">Phone Number *</label>
+					<input name="phone" type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
+				</div>
+				<label for="required">* Required Fields</label>
+				<br/>
+				<button id="submit" type="submit" class="btn btn-primary">Submit</button>
+			</form>
+			<h4>Results:</h4>
+			<div id="results">No results yet.</div>
+		</div>
+		<div class="col-sm-2 col-md-2"></div>
+	</body>
+	<script src="js/validation.js"></script>
+	<script src="js/app.js"></script>
+</html>
